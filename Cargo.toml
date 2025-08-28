@@ -1,14 +1,18 @@
 [package]
 authors = ["Matt Baker <baker.matt.j@gmail.com>"]
 name = "ampon_anchor"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
 
 [dependencies]
-cortex-m-rt = {version = "0.7.0", features = ["device"]}
+cortex-m-rt = { version = "0.7.0", features = ["device"] }
 cortex-m = "0.7.0"
 panic-halt = "0.2.0"
-stm32f0xx-hal = {version = "0.18.0", features = ["stm32f072", "rt", "stm32-usbd"]}
+stm32f0xx-hal = { version = "0.18.0", features = [
+    "stm32f072",
+    "rt",
+    "stm32-usbd",
+] }
 embedded-hal = "0.2.7"
 usb-device = "0.2.9"
 usbd-serial = "0.1.1"
